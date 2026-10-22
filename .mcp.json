@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "burp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-burp"
+      ],
+      "env": {}
+    },
+    "ghidra": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-ghidra"
+      ],
+      "env": {}
+    },
+    "nmap": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-nmap"
+      ],
+      "env": {}
+    }
+  }
+}
