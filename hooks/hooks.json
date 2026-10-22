@@ -1,15 +1,3 @@
 {
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash|mcp__.*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/hooks/pre-tool-use.py\""
-          }
-        ]
-      }
-    ]
-  }
+  "hooks": {}
 }

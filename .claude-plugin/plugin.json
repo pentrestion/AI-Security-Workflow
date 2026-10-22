@@ -1,8 +1,4 @@
 {
   "name": "ai-security-workflow",
-  "version": "1.0.0",
-  "description": "AI-assisted multi-domain security testing framework",
-  "author": {
-    "name": "mir Mahmood"
-  }
+  "status": "repository-only"
 }

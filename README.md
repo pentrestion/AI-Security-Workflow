@@ -1,42 +1,42 @@
 # AI-Security-Workflow
-An AI-assisted, multi-domain security testing framework for authorized research.
 
-## What This Is
-A modular workflow that turns LLMs (ChatGPT, Claude, Gemini, DeepSeek, Grok)
-into structured security testers using the four-phase loop:
-Scoping → Discovery → Hypothesis/Verification → Reporting.
+A multi-domain security testing workflow for authorized research, red teaming, and validation work.
 
-## Quick Start
-1. Clone the repo and configure `.env`.
-2. Install requirements: `pip install -r requirements.txt`
-3. Run `python core/orchestrator.py init --domain web --name my-target`
-4. Fill in the engagement scope and authorization files.
-5. Run `discover`, `hypothesis_engine`, `verifier`, and `report`.
+## What this repository contains
 
-## Modules
-- `domains/web/` — SQLi, XSS, SSRF, request smuggling (Burp MCP)
-- `domains/iot/` — firmware extraction, protocol fuzzing (Ghidra MCP)
-- `domains/supply-chain/` — dependency confusion, typosquatting (OSV + AST)
-- `domains/network/` — misconfigurations, default creds (Nmap MCP)
-- `library-testing/` — component-level source analysis (`/http`, `/socket`, `/crypto`)
+This repository is a source-focused security testing toolkit and reference library. It contains:
 
-## CVE Case Studies
-See `cve-reference/` for chained exploit walkthroughs with AI notes.
+- domain-oriented workflow guides for web, IoT, network, supply-chain, and reverse engineering work
+- library-source auditing materials
+- verification and reporting patterns
+- CVE reference studies and chained exploit notes
+- helper scripts and tooling adapters used by the local workflow
 
-## Safety
-All verification is sandboxed. Refute-first validation suppresses unconfirmed findings.
-Authorized testing only.
+## Quick start
 
-## Repository Layout
+1. Clone the repository.
+2. Review the domain folders and the skill files under `skills/`.
+3. Configure any local environment variables or credentials as needed for your authorized testing scope.
+4. Run the workflow using the tools and scripts in the repository as needed for your engagement.
+
+## Safety and scope
+
+- Use this repository only for authorized testing and research.
+- Keep all activity within the approved scope and sandbox.
+- Validate every hypothesis before claiming a finding.
+- Treat the environment as untrusted and verify everything with reproducible evidence.
+
+## Repository structure
+
 ```text
 AI-Security-Workflow/
 ├── README.md
 ├── LICENSE
-├── .env.example
 ├── requirements.txt
 ├── core/
 ├── domains/
 ├── library-testing/
+├── skills/
 ├── cve-reference/
 ├── tools/
 ├── reports/
@@ -44,4 +44,5 @@ AI-Security-Workflow/
 ```
 
 ## License
+
 MIT

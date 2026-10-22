@@ -1,15 +1,3 @@
 {
-  "mcpServers": {
-    "ghidra": {
-      "command": "uvx",
-      "args": [
-        "--from",
-        "git+https://github.com/LaurieWired/GhidraMCP",
-        "ghidra-mcp"
-      ],
-      "env": {
-        "GHIDRA_HOME": "${CLAUDE_PROJECT_DIR}/tools/ghidra"
-      }
-    }
-  }
+  "mcpServers": {}
 }

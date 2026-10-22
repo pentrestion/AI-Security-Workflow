@@ -1,23 +1,8 @@
 {
-  "name": "ai-security-workflow-agent-plugin",
+  "name": "ai-security-workflow",
   "version": "1.0.0",
   "private": true,
-  "description": "Portable AI security testing plugin for Claude Code, GitHub Copilot CLI, and OpenClaw.",
-  "type": "module",
-  "scripts": {
-    "validate": "node scripts/validate-plugin.mjs",
-    "plugin:check": "npm run validate"
-  },
-  "keywords": [
-    "security",
-    "ai",
-    "claude",
-    "copilot",
-    "openclaw",
-    "pentest",
-    "mcp",
-    "security-testing"
-  ],
+  "description": "Repository for AI-assisted multi-domain security testing workflows.",
   "author": {
     "name": "mir Mahmood"
   },
