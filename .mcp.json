@@ -1,28 +1,26 @@
 {
   "mcpServers": {
-    "burp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-burp"
-      ],
-      "env": {}
-    },
     "ghidra": {
-      "command": "npx",
+      "command": "uvx",
       "args": [
-        "-y",
-        "@modelcontextprotocol/server-ghidra"
+        "--from",
+        "git+https://github.com/LaurieWired/GhidraMCP",
+        "ghidra-mcp"
       ],
-      "env": {}
+      "env": {
+        "GHIDRA_HOME": "${CLAUDE_PROJECT_DIR}/tools/ghidra"
+      }
     },
-    "nmap": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-nmap"
-      ],
-      "env": {}
+    "ida": {
+      "command": "uvx",
+      "args": ["ida-hcli", "mcp", "serve"],
+      "env": {
+        "IDA_PATH": "${CLAUDE_PROJECT_DIR}/tools/ida"
+      }
+    },
+    "binaryninja": {
+      "command": "uvx",
+      "args": ["binaryninja-mcp", "server"]
     }
   }
 }
