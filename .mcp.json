@@ -10,17 +10,6 @@
       "env": {
         "GHIDRA_HOME": "${CLAUDE_PROJECT_DIR}/tools/ghidra"
       }
-    },
-    "ida": {
-      "command": "uvx",
-      "args": ["ida-hcli", "mcp", "serve"],
-      "env": {
-        "IDA_PATH": "${CLAUDE_PROJECT_DIR}/tools/ida"
-      }
-    },
-    "binaryninja": {
-      "command": "uvx",
-      "args": ["binaryninja-mcp", "server"]
     }
   }
 }
