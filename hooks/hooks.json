@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "command": "python3 hooks/pre-tool-use.py",
+        "args": []
+      }
+    ]
+  }
+}
